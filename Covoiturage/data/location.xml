@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Locations>
+    <location>
+        <name>Ecole Primaire Cassandre Salviati</name>
+    </location>
+    <location>
+        <name>Ecole Maternelle Les Mérolles</name>
+    </location>
+    <location>
+        <name>Ecole Maternelle La Brèche</name>
+    </location>
+    <location>
+        <name>Ecole de Musique</name>
+    </location>
+    <location>
+        <name>Complexe Sportif</name>
+    </location>
+</Locations>

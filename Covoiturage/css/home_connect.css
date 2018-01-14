@@ -1,0 +1,262 @@
+#search-trip {
+    background: url("../img/search-trip-bg.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 0;
+}
+.search-trip-wrapper {
+    color: #000;
+    position: relative;
+}
+.search-trip-wrapper .jumbotron h1 .line-1 {
+    font-weight: 400;
+    font-size: 20px;
+    display: block;
+}
+.search-trip-wrapper .jumbotron h1 .line-2 {
+    font-size: 35px;
+    display: block;
+    font-weight: 800;
+}
+#search-trip .search-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 20px;
+}
+.live-search-form div.field-wrap {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.geolocation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: none;
+    border: 0;
+    width: 44px;
+    font-size: 18px;
+    color: #16a6c5;
+    outline: none !important;
+}
+.grid-map {
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    height: 44px;
+}
+.live-search-form label.image-replace {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    bottom: auto;
+    height: 20px;
+    width: 13px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+    text-shadow: none;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.live-search-form label.start {
+    background-image: url("../img/start-geo.png");
+}
+.live-search-form label.end {
+    background-image: url("../img/end-geo.png");
+}
+.live-search-form input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+    outline: none;
+    line-height: 18px !important;
+}
+.live-search-form input.full-width {
+    width: 100%;
+}
+.live-search-form input.has-padding {
+    padding: 12px 40px 12px 43px;
+}
+.live-search-form input.has-border {
+    border: 1px solid #ced4da;;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    border-radius: .25rem;
+}
+.live-search-form input.has-border:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+.live-search-form input.error {
+    border: 1px solid #ee0078;
+    color: #ee0078;
+    background-color: #fdd9d8;
+}
+.live-search-form .live-search {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    z-index: 100;
+}
+.live-search-form .live-search ul li {
+    font-size: 15px;
+    padding: 10px 15px 10px 30px;
+    background-image: url("../img/location.svg.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 7.5px center;
+    cursor: pointer;
+}
+.live-search-form .live-search ul li:not(:first-child) {
+    border-top: 1px solid #d7d7d7;
+}
+.live-search-form .live-search ul li:hover {
+    background-color: #fdf9ff;
+}
+.live-search-form .submit-wrapper {
+    width: auto;
+    cursor: pointer;
+}
+.live-search-form .submit-wrapper .search-submit {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.live-search-form .submit-wrapper .search-submit span {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 18px;
+}
+#search-trip .alert {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 576px) {
+    .search-trip-wrapper .jumbotron {
+        padding: 2rem 1rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .search-trip-wrapper .jumbotron {
+        padding: 4rem 2rem;
+    }
+    .search-trip-wrapper .jumbotron h1 .line-1 {
+        font-size: 25px;
+    }
+    .search-trip-wrapper .jumbotron h1 .line-2 {
+        font-size: 40px;
+    }
+    .search-bar .live-search-form div.field-wrap {
+        float: left;
+        width: 50%;
+    }
+    .search-bar .live-search-form div.field-wrap.origin {
+        padding-right: 5px;
+    }
+    .search-bar .live-search-form div.field-wrap.destination {
+        padding-left: 5px;
+    }
+    .live-search-form .submit-wrapper {
+        clear: both;
+    }
+    #formSearchTrip.live-search-form .submit-wrapper .search-submit {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .search-trip-wrapper .jumbotron h1 .line-1 {
+        font-size: 30px;
+    }
+    .search-trip-wrapper .jumbotron h1 .line-2 {
+        font-size: 45px;
+    }
+    .search-bar .live-search-form div.field-wrap.origin,
+    .search-bar .live-search-form div.field-wrap.destination {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .search-trip-wrapper .jumbotron h1 .line-1 {
+        font-weight: 400;
+        font-size: 35px;
+
+    }
+
+    .search-trip-wrapper .jumbotron h1 .line-2 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .search-bar .live-search-form div.field-wrap {
+        width: 37%;
+    }
+
+    .search-bar .live-search-form div.field-wrap.origin {
+        margin-right: 2%;
+    }
+    .live-search-form label.image-replace {
+
+    }
+    .live-search-form input.has-padding {
+        padding: 12px 15px 12px 43px;
+    }
+
+    .live-search-form input.has-border {
+        border: 1px solid #ced4da;;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        border-radius: .25rem;
+    }
+
+    .live-search-form .submit-wrapper {
+        float: right;
+        display: inline-block;
+        clear: none;
+    }
+
+    #formSearchTrip.live-search-form .submit-wrapper .search-submit {
+        width: 100%;
+    }
+
+    #formSearchTrip.live-search-form .submit-wrapper .search-submit span {
+        padding: 12px 30px;
+    }
+
+}
+
+
+/*-----------------------------------------------
+-----------------------------------------------*/
+
+#create-trip {
+    background: #383C45;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.teaser {
+    margin-bottom: 2rem;
+}
+
+.teaser h2 {
+    font-size: 2rem;
+}

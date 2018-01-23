@@ -6,7 +6,7 @@ class DB
     private $hostname = 'localhost',
             $username = 'root',
             $password = '',
-            $database = 'covoiturage_v2';
+            $database = 'covoiturage';
 
     // variable connect
     public $cn = NULL;

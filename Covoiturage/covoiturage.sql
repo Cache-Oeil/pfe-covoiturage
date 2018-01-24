@@ -1,3 +1,5 @@
+CREATE DATABASE `covoiturage`;
+
 CREATE TABLE `compte` (
   `id_compte` int(11) NOT NULL AUTO_INCREMENT,
   `nom` VARCHAR(32) CHARACTER SET utf8 NOT NULL,
